@@ -1,0 +1,102 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+.BG {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/gaga.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+.NIGGAS {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NIGGAS ul li{
+    list-style:  none;
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+}
+
+.NIGGAS ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-decoration: uppercase;
+}
+
+.NIGGAS ul li::after{
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: #009680;
+    position: absolute;
+    right: 0%;
+    bottom: -10px;
+    transition: 1s;
+}
+
+.NIGGAS ul li:hover::after{
+    width: 100%;
+    height: 20%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(10, 116, 245);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: rgba(255, 0, 25);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}

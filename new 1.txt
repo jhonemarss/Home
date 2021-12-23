@@ -1,0 +1,12 @@
+<!DOCTYPE HTML> 
+<html> 
+ <head>  
+  <title> Calendar </title> 
+ </head> 
+  
+ <body>  
+ <!--this is for header --> 
+  <table border = "1" height = "100px" width = "70%"> 
+   <tr> 
+    <th> <b> OCTOBER </b> </th> 
+  </table> 
